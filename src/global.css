@@ -1,7 +1,17 @@
 @import "tailwindcss";
-@import '@fontsource/inter/500.css';
+@import "@fontsource/inter/500.css";
 
 body {
-  cursor: url('/images/Coloroid-Cursor.png'), auto;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
 }
